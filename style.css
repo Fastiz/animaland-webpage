@@ -17,8 +17,12 @@ input,select{vertical-align:middle}
 body,html {
 	background-color: #FFF;
 }
+body {
+    margin: auto 0 auto 0;
+    max-width: 100vw;
+}
 header {
-    background: #AEC6CF;
+    background: #8ecb93;
     padding: 20px 30px;
     max-width: 940px;
     margin: auto;
@@ -57,22 +61,21 @@ main {
 aside {
 	float: right;
 	width: 30%;
+    position: sticky;
 }
-article {
+.main > div {
     border-bottom: 2px dotted #999;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
-article h2 {
+.main > div h2 {
     font-weight: normal;
     margin-bottom: 12px;
 }
-article p {
+.main > div p {
 	
 }
-main section {
-	
-}
+
 footer {
 	background: #AEC6CF;
 	max-width: 1000px;
@@ -99,7 +102,7 @@ aside > div {
     color: #FFF;
 }
 #logo img {
-    width: 50px;
+    width: 100px;
     vertical-align: middle;
     margin-right: 10px;
 }
@@ -125,5 +128,31 @@ body > section {
 		float: none;
 		width: 100%;
 	}
+    html {
+        width: 100vh;
+    }
+}
 
+#title {
+    font-size: 3rem;
+}
+
+section.team-members img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+section.team-members ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.team-members li {
+    padding: 1rem;
+    text-align: center;
+    max-width: 10rem;
 }
