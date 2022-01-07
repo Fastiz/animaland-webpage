@@ -19,7 +19,6 @@ body,html {
 }
 body {
     margin: auto 0 auto 0;
-    max-width: 100vw;
 }
 header {
     background: #8ecb93;
@@ -56,7 +55,6 @@ nav ul {
 }
 main {
 	float: left;
-	width: 60%;
 }
 aside {
 	float: right;
@@ -155,4 +153,21 @@ section.team-members li {
     padding: 1rem;
     text-align: center;
     max-width: 10rem;
+}
+
+.main > div p {
+    padding: 0.2rem;
+}
+
+.main > div ul {
+    margin-left: 1.5rem;
+    padding: 0.5rem;
+}
+
+.main li > ul {
+    margin-top: .5rem;
+}
+
+li {
+    padding: 0.2rem;
 }
