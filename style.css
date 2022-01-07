@@ -19,6 +19,7 @@ body,html {
 }
 body {
     margin: auto 0 auto 0;
+    max-width: 100vw;
 }
 header {
     background: #8ecb93;
@@ -162,6 +163,16 @@ li {
 .gallery-container > img {
     padding: .5rem;
     width: 40%;
+}
+
+iframe {
+    max-width: 90vw;
+}
+
+.preview-img {
+    width: 100%;
+    max-width: 50rem;
+    margin: 1rem auto 0 auto;
 }
 
 @media screen and (max-width: 1000px) {
