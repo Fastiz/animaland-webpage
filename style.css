@@ -112,25 +112,6 @@ body > section {
     color: #333;
 }
 
-@media screen and (max-width: 1000px) {
-	body > section {
-		padding: 30px 20px;
-	}
-}
-@media screen and (max-width: 600px) {
-	main {
-		float: none;
-		width: 100%;
-	}
-	aside {
-		float: none;
-		width: 100%;
-	}
-    html {
-        width: 100vh;
-    }
-}
-
 #title {
     font-size: 3rem;
 }
@@ -170,4 +151,39 @@ section.team-members li {
 
 li {
     padding: 0.2rem;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery-container > img {
+    padding: .5rem;
+    width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+    body > section {
+        padding: 30px 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    main {
+        float: none;
+        width: 100%;
+    }
+    aside {
+        float: none;
+        width: 100%;
+    }
+    html {
+        width: 100vh;
+    }
+
+    .gallery-container > img {
+        padding: .5rem;
+        width: 90%;
+    }
 }
